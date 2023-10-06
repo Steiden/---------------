@@ -5,14 +5,15 @@
 }
 
 body {
-  width: 1920px;
-  height: 4560px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header {
   background: url("../img/mainBackground.jpg") no-repeat;
   background-size: cover;
+}
+.header::before {
+  background-color: rgba(0, 0, 0, 0.5529411765);
 }
 .header .header__top-side {
   background-color: #fff;
@@ -25,7 +26,7 @@ body {
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
 }
 .header .contact_p-inline_400 {
-  padding-inline: 400px;
+  padding-inline: 10em;
 }
 .header .contact__telephone {
   font-size: 16px;
@@ -37,6 +38,7 @@ body {
   border: none;
   border-radius: 10px;
   background: #ffa019;
+  cursor: pointer;
 }
 .header .button_text-style_white {
   color: white;
@@ -50,7 +52,7 @@ body {
   align-items: center;
 }
 .header .nav-container_p-inline_400 {
-  padding-inline: 400px;
+  padding-inline: 10em;
 }
 .header .logo {
   font-size: 30px;

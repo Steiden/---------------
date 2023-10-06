@@ -1,14 +1,16 @@
 @import "reset";
 
 body {
-	width: 1920px;
-	height: 4560px;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header {
 	background: url("../img/mainBackground.jpg") no-repeat;
 	background-size: cover;
+	
+	&::before {
+		background-color: #0000008d;
+	}
 
 	.header__top-side {
 		background-color: #fff;
@@ -23,7 +25,7 @@ body {
 	}
 
 	.contact_p-inline_400 {
-		padding-inline: 400px;
+		padding-inline: 10em;
 	}
 
 	.contact__telephone {
@@ -37,6 +39,7 @@ body {
 		border: none;
 		border-radius: 10px;
 		background: #ffa019;
+		cursor: pointer;
 	}
 	.button_text-style_white {
 		color: #ffff;
@@ -52,7 +55,7 @@ body {
 	}
 
 	.nav-container_p-inline_400 {
-		padding-inline: 400px;
+		padding-inline: 10em;
 	}
 
 	.logo {
