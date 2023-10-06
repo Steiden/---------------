@@ -1,4 +1,5 @@
 @import "reset";
+@import "media";
 
 html {
 	scroll-behavior: smooth;
@@ -136,6 +137,7 @@ body {
 	.advantages-list__item {
 		display: inline-flex;
 		flex-direction: column;
+		align-items: center;
 	}
 
 	.advantages-list__img {
@@ -176,7 +178,7 @@ body {
 	.subscribe__form {
 		width: 80rem;
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
 	}
 
 	.subscribe__input {
@@ -260,4 +262,8 @@ body {
 
 .m-block_8 {
 	margin-block: 8rem;
+}
+
+.m-l_3 {
+	margin-left: 3rem;
 }
