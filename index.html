@@ -12,7 +12,7 @@
 	<!-- Шапка -->
 	<header class="header">
 		<section class="header__top-side">
-			<div class="contact contact_p-inline_400">
+			<div class="contact p-inline_10">
 				<div class="contact__telephone">
 					<span>Мы всегда готовы помочь по телефону +7 923 398 9013</span>
 				</div>
@@ -20,7 +20,7 @@
 					<span>Заказать звонок</span>
 				</button>
 			</div>
-			<div class="nav-container nav-container_p-inline_400">
+			<div class="nav-container p-inline_10">
 				<div class="logo">
 					<a href="index.html" class="logo_text-decor_none">My-Giro</a>
 				</div>
@@ -49,18 +49,75 @@
 			</div>
 		</section>
 		<section class="header__bottom-side">
-			<h1 class="header__title header__title_m-b_30">My-Giro</h1>
-			<article class="header__text header__text_m-b_45">
+			<h1 class="header__title m-b_3">My-Giro</h1>
+			<article class="header__text m-b_5">
 				Крупнейший интернет-магазин гироскутеров, сигвеев и электросамокатов
 				от известных мировых производителей
 			</article>
 			<button class="header__katalog-btn button button_text-style_black">В каталог</button>
 		</section>
 	</header>
-	<main>
-
+	<main class="main">
+		<section class="advantages p-inline_10" id="Advantages">
+			<div class="advantages__top-side m-block_8">
+				<h2 class="title advantages__title">Наши преимущества</h2>
+				<div class="advantages__arrows">
+					<button class="advantages__arrow-btn">
+						<img src="./img/arrow-left.svg" alt="arrow-left">
+					</button>
+					<button class="advantages__arrow-btn">
+						<img src="./img/arrow-right.svg" alt="arrow-right">
+					</button>
+				</div>
+			</div>
+			<ul class="advantages-list advantages__advantages-list">
+				<li class="advantages-list__item">
+					<img src="./img/100-kachestvo.png" alt="advantage1" class="advantages-list__img">
+					<span class="advantages-list__text">Гарантия качества</span>
+				</li>
+				<li class="advantages-list__item">
+					<img src="./img/bistraya-dostavka.png" alt="advantage2" class="advantages-list__img">
+					<span class="advantages-list__text">Быстрая доставка</span>
+				</li>
+				<li class="advantages-list__item">
+					<img src="./img/bolshoy-assortiment.png" alt="advantage3" class="advantages-list__img">
+					<span class="advantages-list__text">Большой ассортимент</span>
+				</li>
+				<li class="advantages-list__item">
+					<img src="./img/consultant.png" alt="advantage4" class="advantages-list__img">
+					<span class="advantages-list__text">Онлайн-консультант</span>
+				</li>
+			</ul>
+		</section>
+		<section class="about p-inline_10" id="About">
+			<div class="about__top-side m-t_8 m-b_3">
+				<h2 class="title about__title">О нас</h2>
+			</div>
+				<article>
+					<p class="about__text">
+						В нашем интернет-магазине представлен большой выбор гироскутеров, сигвеев и электросамокатов от
+						известных
+						мировых производителей.
+					</p>
+					<br>
+					<p class="about__text">
+						Все товары, представленные на нашем сайте, отобраны лучшими специалистами в этой области. Купить
+						гироскутер, электросамокат или сигвей недорого, Вы можете в нашем интернет-магазине в любое
+						время,
+						когда Вам удобно. Доставка заказов осуществляется бесплатно, в любую точку России.
+					</p>
+				</article>
+		</section>
+		<section class="subscribe p-inline_10 m-t_8 themes_orange">
+			<span class="subscribe__about">Подпишитесь на нашу рассылку и оставайтесь в курсе событий</span>
+			<form class="subscribe__form">
+				<input type="text" class="input subscribe__input" id="Name" placeholder="Имя">
+				<input type="email" class="input subscribe__input" id="Email" placeholder="Email">
+				<button type="submit" class="button subscribe__button button_text-style_black">Подписаться</button>
+			</form>
+		</section>
 	</main>
-	<footer class="footer">
+	<!-- <footer class="footer">
 		<article class="footer__leftText">
 			<p>
 				В нашем интернет-магазине представлен большой выбор гироскутеров, сигвеев и электросамокатов от
@@ -96,7 +153,7 @@
 				</ul>
 			</div>
 		</nav>
-	</footer>
+	</footer> -->
 </body>
 
 </html>
