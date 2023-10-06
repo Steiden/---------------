@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1920px;
+  height: 4560px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  background: url("../img/mainBackground.jpg") no-repeat;
+  background-size: cover;
+}
+.header .header__top-side {
+  background-color: #fff;
+}
+.header .contact {
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+}
+.header .contact_p-inline_400 {
+  padding-inline: 400px;
+}
+.header .contact__telephone {
+  font-size: 16px;
+  font-weight: 400;
+}
+.header .button {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: #ffa019;
+}
+.header .button_text-style_white {
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+}
+.header .nav-container {
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav-container_p-inline_400 {
+  padding-inline: 400px;
+}
+.header .logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+.header .list {
+  list-style: none;
+}
+.header .list__item {
+  display: inline;
+}
+.header .list__item:not(:last-child), .header .list__item:not(:first-child) {
+  margin-inline: 15px;
+}
+.header .list__items_t-decor_none {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+.header .header__bottom-side {
+  height: 820px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header .header__title {
+  color: #fff;
+  font-size: 56px;
+  font-weight: 300;
+}
+.header .header__title_m-b_30 {
+  margin-bottom: 30px;
+}
+.header .header__text {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  width: 650px;
+  text-align: center;
+}
+.header .header__text_m-b_45 {
+  margin-bottom: 45px;
+}
+.header .header__katalog-btn {
+  width: 165px;
+  height: 60px;
+  border-radius: 10px;
+  background: #fff;
+}
+.header .button_text-style_black {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
