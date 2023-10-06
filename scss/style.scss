@@ -1,14 +1,13 @@
 @import "reset";
 
 body {
-	width: 1920px;
-	height: 4560px;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	scroll-behavior: smooth;
 }
 
 .header {
-	background: url("../img/mainBackground.jpg") no-repeat;
-	background-size: cover;
+	background: center / cover no-repeat rgba(0, 0, 0, 0.4) url("../img/mainBackground.jpg");
+	background-blend-mode: darken;
 
 	.header__top-side {
 		background-color: #fff;
@@ -23,7 +22,7 @@ body {
 	}
 
 	.contact_p-inline_400 {
-		padding-inline: 400px;
+		padding-inline: 10em;
 	}
 
 	.contact__telephone {
@@ -37,6 +36,7 @@ body {
 		border: none;
 		border-radius: 10px;
 		background: #ffa019;
+		cursor: pointer;
 	}
 	.button_text-style_white {
 		color: #ffff;
@@ -52,12 +52,17 @@ body {
 	}
 
 	.nav-container_p-inline_400 {
-		padding-inline: 400px;
+		padding-inline: 10em;
 	}
 
 	.logo {
 		font-size: 30px;
 		font-weight: 700;
+	}
+
+	.logo_text-decor_none {
+		color: #000;
+		text-decoration: none;
 	}
 
 	.header__nav {
