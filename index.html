@@ -9,7 +9,8 @@
 </head>
 
 <body>
-	<!-- Шапка -->
+
+	<!-- header -->
 	<header class="header">
 		<section class="header__top-side">
 			<div class="contact p-inline_10">
@@ -57,6 +58,8 @@
 			<button class="header__katalog-btn button button_text-style_black">В каталог</button>
 		</section>
 	</header>
+
+	<!-- main -->
 	<main class="main">
 		<section class="advantages p-inline_10" id="Advantages">
 			<div class="advantages__top-side m-block_8">
@@ -93,31 +96,199 @@
 			<div class="about__top-side m-t_8 m-b_3">
 				<h2 class="title about__title">О нас</h2>
 			</div>
-				<article>
-					<p class="about__text">
-						В нашем интернет-магазине представлен большой выбор гироскутеров, сигвеев и электросамокатов от
-						известных
-						мировых производителей.
-					</p>
-					<br>
-					<p class="about__text">
-						Все товары, представленные на нашем сайте, отобраны лучшими специалистами в этой области. Купить
-						гироскутер, электросамокат или сигвей недорого, Вы можете в нашем интернет-магазине в любое
-						время,
-						когда Вам удобно. Доставка заказов осуществляется бесплатно, в любую точку России.
-					</p>
-				</article>
+			<article>
+				<p class="about__text">
+					В нашем интернет-магазине представлен большой выбор гироскутеров, сигвеев и электросамокатов от
+					известных
+					мировых производителей.
+				</p>
+				<br>
+				<p class="about__text">
+					Все товары, представленные на нашем сайте, отобраны лучшими специалистами в этой области. Купить
+					гироскутер, электросамокат или сигвей недорого, Вы можете в нашем интернет-магазине в любое
+					время,
+					когда Вам удобно. Доставка заказов осуществляется бесплатно, в любую точку России.
+				</p>
+			</article>
 		</section>
 		<section class="subscribe p-inline_10 m-t_8 themes_orange">
 			<span class="subscribe__about">Подпишитесь на нашу рассылку и оставайтесь в курсе событий</span>
 			<form class="subscribe__form">
 				<input type="text" class="input subscribe__input m-l_3" id="Name" placeholder="Имя">
 				<input type="email" class="input subscribe__input m-l_3" id="Email" placeholder="Email">
-				<button type="submit" class="button subscribe__button m-l_3 button_text-style_black">Подписаться</button>
+				<button type="submit"
+					class="button subscribe__button m-l_3 button_text-style_black">Подписаться</button>
 			</form>
 		</section>
+		<section class="features p-inline_10" id="Features">
+			<h2 class="title features__title m-t_8 m-b_6">Особенности гироскутеров</h2>
+			<div class="features__about features_text-style">
+				<div class="list-container d_flex m-b_2">
+					<div class="list-container-minus d_flex m-r_10">
+						<ul class="list-features features__list">
+							<li class="list-features__item before_minus">Трсяёт</li>
+							<li class="list-features__item before_minus">Нет сиденья</li>
+							<li class="list-features__item before_minus">Только для одного</li>
+						</ul>
+					</div>
+					<div class="list-container-plus d_flex m-l_10">
+						<ul class="list-features features__list m-r_4">
+							<li class="list-features__item before_plus">Исключительная компактность</li>
+							<li class="list-features__item before_plus">Небольшой вес</li>
+							<li class="list-features__item before_plus">Экономичность</li>
+						</ul>
+						<ul class="list-features features__list m-l_4">
+							<li class="list-features__item before_plus">Доступность</li>
+							<li class="list-features__item before_plus">Маневренность</li>
+							<li class="list-features__item before_plus">Простотой в освоении</li>
+						</ul>
+					</div>
+				</div>
+				<p class="features__text m-t_2">
+					Этих преимуществ гироскутера вполне достаточно для тоого, чтобы в своей нише
+					данный вид транспорта являлся одним
+					из самых лучших вариантов!
+				</p>
+			</div>
+		</section>
+		<section class="catalog p-inline_7 m-t_6" id="Catalog">
+			<div class="catalog-container p-inline_3 p-block_6">
+				<div class="catalog__top-side d_flex m-b_9">
+					<h2 class="title catalog__title">Каталог</h2>
+					<nav class="filter catalog__filter catalog_text-style d_flex">
+						<ul class="filter-list d_flex">
+							<li class="filter-list__item">
+								<button class="filter__button selected" id="filter-all">Все</button>
+							</li>
+							<li class="filter-list__item">
+								<button class="filter__button" id="filter-giroskuters">Гироскутеры</button>
+							</li>
+							<li class="filter-list__item">
+								<button class="filter__button" id="filter-electroskooters">Электросамокаты</button>
+							</li>
+							<li class="filter-list__item">
+								<button class="filter__button" id="filter-segways">Сигвеи</button>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<ul class="card-list catalog__cards d_flex">
+					<li class="card-container card-list__item">
+						<div class="card">
+							<div class="card__type">Сигвеи</div>
+							<div class="img-container"><img src="./img/Catalog/Sigways/Sigway2.jpg" alt="Sigway2" class="card__img"></div>
+							<h6 class="card__title">Xiaomi Ninebot mini Pro White (Белый)</h6>
+							<span class="card__price">31 480</span>
+						</div>
+					</li>
+					<li class="card-container card-list__item">
+						<div class="card">
+							<div class="card__type">Гироскутеры</div>
+							<div class="img-container"><img src="./img/Catalog/Giroskooters/Giroskooter2.jpg" alt="Giroskooter2" class="card__img"></div>
+							<h6 class="card__title">Xiaomi Ninebot mini Pro White (Белый)</h6>
+							<span class="card__price">31 480</span>
+						</div>
+					</li>
+					<li class="card-container card-list__item">
+						<div class="card">
+							<div class="card__type">Электросамокаты</div>
+							<div class="img-container"><img src="./img/Catalog/Electroskooters/Electroskooter3.jpg" alt="Electroskooter3" class="card__img"></div>
+							<h6 class="card__title">Xiaomi Ninebot mini Pro White (Белый)</h6>
+							<span class="card__price">31 480</span>
+						</div>
+					</li>
+					<li class="card-container card-list__item">
+						<div class="card">
+							<div class="card__type">Сигвеи</div>
+							<div class="img-container"><img src="./img/Catalog/Sigways/Sigway1.jpg" alt="Sigway1" class="card__img"></div>
+							<h6 class="card__title">Xiaomi Ninebot mini Pro White (Белый)</h6>
+							<span class="card__price">31 480</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="team" id="Team">
+			<ul class="list-team team__list">
+				<li class="teammate list-team__item">
+					<div class="card">
+						<img src="" alt="">
+						<div class="card__about">
+							<h6>Иван Алексеев</h6>
+							<span>менеджер по продажам</span>
+							<button>Написать</button>
+						</div>
+					</div>
+				</li>
+				<li class="teammate list-team__item">
+					<div class="card">
+						<img src="" alt="">
+						<div class="card__about">
+							<h6>Иван Алексеев</h6>
+							<span>менеджер по продажам</span>
+							<button>Написать</button>
+						</div>
+					</div>
+				</li>
+				<li class="teammate list-team__item">
+					<div class="card">
+						<img src="" alt="">
+						<div class="card__about">
+							<h6>Иван Алексеев</h6>
+							<span>менеджер по продажам</span>
+							<button>Написать</button>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section class="brands" id="Brands">
+			<ul class="brands-list brands__list">
+				<li class="brands-list__item">Xiaomi</li>
+				<li class="brands-list__item">Balance</li>
+				<li class="brands-list__item">Kugoo</li>
+				<li class="brands-list__item">Smart</li>
+				<li class="brands-list__item">Subor</li>
+				<li class="brands-list__item">Airwheel</li>
+				<li class="brands-list__item">Linbol</li>
+			</ul>
+		</section>
+		<section class="useful" id="Useful">
+			<ul class="useful-list useful__list">
+				<li class="useful-list__item">
+					<div class="card-container">
+						<img src="" alt="">
+						<span>Как выбрать гиросктор?
+							Советы перед покупкой</span>
+					</div>
+				</li>
+				<li class="useful-list__item">
+					<div class="card-container">
+						<img src="" alt="">
+						<span>Электросамокат.
+							Какой лучше и как выбрать?</span>
+					</div>
+				</li>
+				<li class="useful-list__item">
+					<div class="card-container">
+						<img src="" alt="">
+						<span>Какой выбрать сигвей?
+							На что обратить внимание?</span>
+					</div>
+				</li>
+				<li class="useful-list__item">
+					<div class="card-container">
+						<img src="" alt="">
+						<span>Советы по выбору
+							гироскутера для ребенка</span>
+					</div>
+				</li>
+			</ul>
+		</section>
 	</main>
-	<!-- <footer class="footer">
+
+	<!-- footer -->
+	<footer class="footer">
 		<article class="footer__leftText">
 			<p>
 				В нашем интернет-магазине представлен большой выбор гироскутеров, сигвеев и электросамокатов от
@@ -153,7 +324,7 @@
 				</ul>
 			</div>
 		</nav>
-	</footer> -->
+	</footer>
 </body>
 
 </html>

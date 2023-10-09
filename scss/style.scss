@@ -1,5 +1,6 @@
 @import "reset";
 @import "media";
+@import "variables";
 
 html {
 	scroll-behavior: smooth;
@@ -13,257 +14,302 @@ body {
 .header {
 	background: center / cover no-repeat rgba(0, 0, 0, 0.4) url("../img/mainBackground.jpg");
 	background-blend-mode: darken;
-
-	.header__top-side {
-		background-color: #fff;
-	}
-
-	.contact {
-		height: 6.2rem;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
-	}
-
-	.contact__telephone {
-		font-size: 1.6rem;
-		font-weight: 400;
-	}
-
-	.nav-container {
-		height: 6.2em;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	.logo {
-		font-size: 3rem;
-		font-weight: 700;
-	}
-
-	.logo_text-decor_none {
-		color: #000;
-		text-decoration: none;
-	}
-
-	.header__nav {
-	}
-	.list {
-		font-size: 1.4rem;
-		list-style: none;
-	}
-	.list__item {
-		display: inline;
-
-		&:not(:last-child),
-		&:not(:first-child) {
-			margin-inline: 15px;
-		}
-	}
-
-	.list__items_t-decor_none {
-		text-transform: uppercase;
-		text-decoration: none;
-		color: #000;
-	}
-
-	.header__bottom-side {
-		height: 82rem;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-	}
-
-	.header__title {
-		color: #fff;
-		font-size: 5.6rem;
-		font-weight: 300;
-	}
-
-	.header__text {
-		color: #fff;
-		font-size: 2rem;
-		font-weight: 300;
-		width: 65rem;
-		text-align: center;
-	}
-
-	.header__katalog-btn {
-		width: 16.5rem;
-		height: 6rem;
-		border-radius: 10px;
-		background: #fff;
-	}
 }
 
-.main {
-	
-	.advantages {
-	}
-
-	.advantages__top-side {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	.advantages__arrow-btn {
-		border: none;
-		background-color: transparent;
-		cursor: pointer;
-	}
-
-	.title {
-		font-size: 3.4rem;
-		font-weight: 300;
-	}
-
-	.advantages__title {
-	}
-	
-	.advantages-list {
-		text-align: center;
-	}
-
-	.advantages__advantages-list {
-		list-style: none;
-		display: flex;
-		justify-content: space-around;
-	}
-	
-	.advantages-list__item {
-		display: inline-flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.advantages-list__img {
-		width: 12rem;
-	}
-
-	.advantages-list__text {
-		font-size: 2rem;
-		font-weight: 300;
-	}
-
-	.about {
-	}
-	.about__top-side {
-	}
-	.title {
-	}
-	.about__title {
-	}
-	.about__text {
-		font-size: 2rem;
-		font-weight: 300;
-	}
-
-	.subscribe {
-		height: 9.4rem;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	.subscribe__about {
-		font-size: 1.8rem;
-		font-weight: 600;
-		width: 30rem;
-	}
-
-	.subscribe__form {
-		width: 80rem;
-		display: flex;
-		justify-content: flex-end;
-	}
-
-	.subscribe__input {
-		background-color: transparent;
-		border-color: #fff;
-		color: #fff;
-
-		&::placeholder {
-			color: #fff;
-		}
-	}
-
-	.subscribe__button {
-		background-color: #fff;
-		width: 19.4rem;
-		height: 4.5rem;
-		font-size: 1.8rem;
-		font-weight: 600;
-		border-radius: 0;
-	}
+.header__top-side {
+	background-color: #fff;
 }
 
-// Классы настроек
-.input {
-	width: 20rem;
-	height: 4.5rem;
-	border: 2px solid black;
-	padding: 1.2rem;
-	font-size: 1.4rem;
+.contact {
+	height: 6.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contact__telephone {
+	font-size: 1.6rem;
 	font-weight: 400;
-
-	&:focus {
-		outline-width: 0;
-		border: 3px solid #fff;
-		box-shadow: 0 0 5px #fff;
-	}
 }
 
-.button {
-	width: 20rem;
-	height: 4rem;
-	border: none;
-	border-radius: 10px;
-	background: #ffa019;
-	cursor: pointer;
-	text-transform: uppercase;
+.nav-container {
+	height: 6.2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.button_text-style_white {
-	color: #ffff;
-	font-size: 1.3rem;
+.logo {
+	font-size: 3rem;
 	font-weight: 700;
 }
 
-.button_text-style_black {
+.logo_text-decor_none {
 	color: #000;
+	text-decoration: none;
+}
+
+.header__nav {
+}
+.list {
+	font-size: 1.4rem;
+	list-style: none;
+}
+.list__item {
+	display: inline;
+
+	&:not(:last-child),
+	&:not(:first-child) {
+		margin-inline: 15px;
+	}
+}
+
+.list__items_t-decor_none {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000;
+}
+
+.header__bottom-side {
+	height: 82rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.header__title {
+	color: #fff;
+	font-size: 5.6rem;
+	font-weight: 300;
+}
+
+.header__text {
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 300;
+	width: 65rem;
+	text-align: center;
+}
+
+.header__katalog-btn {
+	width: 16.5rem;
+	height: 6rem;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+
+// * __________Преимущества
+.advantages {
+}
+
+.advantages__top-side {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.advantages__arrow-btn {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.title {
+	font-size: 3.4rem;
+	font-weight: 300;
+}
+
+.advantages__title {
+}
+
+.advantages-list {
+	text-align: center;
+}
+
+.advantages__advantages-list {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.advantages-list__item {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.advantages-list__img {
+	width: 12rem;
+}
+
+.advantages-list__text {
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+// * __________О нас
+.about {
+}
+.about__top-side {
+}
+.title {
+}
+.about__title {
+}
+.about__text {
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+// * __________Подписка
+.subscribe {
+	height: 9.4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.subscribe__about {
+	font-size: 1.8rem;
+	font-weight: 600;
+	width: 30rem;
+}
+
+.subscribe__form {
+	width: 80rem;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.subscribe__input {
+	background-color: transparent;
+	border-color: #fff;
+	color: #fff;
+
+	&::placeholder {
+		color: #fff;
+	}
+}
+
+.subscribe__button {
+	background-color: #fff;
+	width: 19.4rem;
+	height: 4.5rem;
+	font-size: 1.8rem;
+	font-weight: 600;
+	border-radius: 0;
+}
+
+// * __________Особенности
+.features {
+}
+.features__title {
+}
+
+.list-container {
+}
+
+.list-features {
+	list-style: none;
+}
+.features__list {
+}
+.list-features__item::before {
+	padding-right: .5rem;
+}
+.features__text {
+}
+
+.features_text-style {
+	font-size: 2rem;
+	font-weight: 300;
+	line-height: 3rem;
+}
+
+// * __________Каталог
+.catalog {
+}
+.catalog-container {
+	background-color: #FBFBFB;
+}
+.catalog__top-side {
+	justify-content: space-between;
+}
+.catalog__title {
+}
+.catalog__filter {
+}
+.filter {
+	align-items: center;
+}
+.filter-list {
+	list-style: none;
+}
+.filter-list__item {
+	padding-inline: 2rem;
+}
+.filter__button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+.card-list {
+	list-style: none;
+	justify-content: space-between;
+}
+.card-container {
+}
+.card-list__item {
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background: #FFF;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+	width: 24rem;
+	height: calc(24rem * 1.4);
+	padding: 1rem;
+	position: relative;
+}
+.card__type {
+	border-radius: 0px 15px 15px 0px;
+	background: #FFA019;
+	color: #FFF;
+	position: absolute;
+	min-width: 6rem;
+	padding: .5rem;
+	padding-right: 1rem;
+	left: 0;
+	top: 1.5rem;
+}
+.img-container {
+	display: flex;
+	justify-content: flex-end;
+}
+.card__img {
+	width: 20rem;
+}
+.card__title {
+	font-size: 1.6rem;
+	font-weight: 300;
+	margin-bottom: 1.5rem;
+	width: 70%;
+}
+.card__price {
 	font-size: 2rem;
 	font-weight: 700;
+
+	&::after {
+		content: "р.";
+		margin-left: .5rem;
+	}
 }
 
-.themes_orange {
-	color: #fff;
-	background-color: #ffa019;
-}
-
-.p-inline_10 {
-	padding-inline: 10rem;
-}
-
-.m-t_8 {
-	margin-top: 8rem;
-}
-
-.m-b_5 {
-	margin-bottom: 5rem;
-}
-
-.m-b_3 {
-	margin-bottom: 3rem;
-}
-
-.m-block_8 {
-	margin-block: 8rem;
-}
-
-.m-l_3 {
-	margin-left: 3rem;
+.catalog_text-style {
+	font-size: 1.6rem;
+	font-weight: 300;
 }

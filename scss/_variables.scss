@@ -1,0 +1,99 @@
+// ! __________________Классы настроек
+.input {
+	width: 20rem;
+	height: 4.5rem;
+	border: 2px solid black;
+	padding: 1.2rem;
+	font-size: 1.4rem;
+	font-weight: 400;
+
+	&:focus {
+		outline-width: 0;
+		border: 3px solid #fff;
+		box-shadow: 0 0 5px #fff;
+	}
+}
+
+.button {
+	width: 20rem;
+	height: 4rem;
+	border: none;
+	border-radius: 10px;
+	background: #ffa019;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.button_text-style_white {
+	color: #ffff;
+	font-size: 1.3rem;
+	font-weight: 700;
+}
+
+.button_text-style_black {
+	color: #000;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.themes_orange {
+	color: #fff;
+	background-color: #ffa019;
+}
+
+.before_minus::before {content: "-";}
+.before_plus::before {content: "+";}
+
+// * display
+.d_flex {display: flex;}
+
+// * padding-inline
+.p-inline_10 {padding-inline: 10rem;}
+.p-inline_9 {padding-inline: 9rem;}
+.p-inline_8 {padding-inline: 8rem;}
+.p-inline_7 {padding-inline: 7rem;}
+.p-inline_6 {padding-inline: 6rem;}
+.p-inline_5 {padding-inline: 5rem;}
+.p-inline_4 {padding-inline: 4rem;}
+.p-inline_3 {padding-inline: 3rem;}
+.p-inline_2 {padding-inline: 2rem;}
+
+
+// * padding-block
+.p-block_6 {padding-block: 6rem;}
+
+// * margin-top
+.m-t_8 {margin-top: 8rem;}
+.m-t_6 {margin-top: 6rem;}
+.m-t_5 {margin-top: 5rem;}
+.m-t_3 {margin-top: 3rem;}
+.m-t_2 {margin-top: 2rem;}
+
+// * margin-bottom
+.m-b_9 {margin-bottom: 9rem;}
+.m-b_6 { margin-bottom: 5rem;}
+.m-b_5 {margin-bottom: 5rem;}
+.m-b_3 {margin-bottom: 3rem;}
+.m-b_2 {margin-bottom: 2rem;}
+
+// * margin-left
+.m-l_10 {margin-left: 10rem;}
+.m-l_4 {margin-left: 4rem;}
+.m-l_3 {margin-left: 3rem;}
+
+// * margin-right
+.m-r_10 {margin-right: 10rem;}
+.m-r_4 {margin-right: 4rem;}
+.m-r_3 {margin-right: 3rem;}
+
+// * margin-block
+.m-block_8 {margin-block: 8rem;}
+
+// * status
+.selected {
+	border-radius: 11px;
+	background: #FFA019 !important;
+	color: #FFF;
+	width: 5rem;
+	height: 2rem;
+}
