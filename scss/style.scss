@@ -11,15 +11,14 @@ body {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+// * __________header
 .header {
 	background: center / cover no-repeat rgba(0, 0, 0, 0.4) url("../img/mainBackground.jpg");
 	background-blend-mode: darken;
 }
-
 .header__top-side {
 	background-color: #fff;
 }
-
 .contact {
 	height: 6.2rem;
 	display: flex;
@@ -27,29 +26,24 @@ body {
 	justify-content: space-between;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
 }
-
 .contact__telephone {
 	font-size: 1.6rem;
 	font-weight: 400;
 }
-
 .nav-container {
 	height: 6.2em;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-
 .logo {
 	font-size: 3rem;
 	font-weight: 700;
 }
-
 .logo_text-decor_none {
 	color: #000;
 	text-decoration: none;
 }
-
 .header__nav {
 }
 .list {
@@ -64,13 +58,11 @@ body {
 		margin-inline: 15px;
 	}
 }
-
 .list__items_t-decor_none {
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #000;
 }
-
 .header__bottom-side {
 	height: 82rem;
 	display: flex;
@@ -78,13 +70,11 @@ body {
 	align-items: center;
 	flex-direction: column;
 }
-
 .header__title {
 	color: #fff;
 	font-size: 5.6rem;
 	font-weight: 300;
 }
-
 .header__text {
 	color: #fff;
 	font-size: 2rem;
@@ -92,7 +82,6 @@ body {
 	width: 65rem;
 	text-align: center;
 }
-
 .header__katalog-btn {
 	width: 16.5rem;
 	height: 6rem;
@@ -388,7 +377,7 @@ body {
 	font-weight: 700;
 }
 
-// * __________
+// * __________Полезная информация
 .useful {
 }
 .useful-list {
