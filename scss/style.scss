@@ -387,3 +387,38 @@ body {
 	font-size: 4rem;
 	font-weight: 700;
 }
+
+// * __________
+.useful {
+}
+.useful-list {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+.useful__list {
+}
+.useful-list__item {
+}
+.useful-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 0.4);
+	background-blend-mode: darken;
+	width: 25rem;
+	height: 25rem;
+}
+
+.useful-1 {background-image: url('../img/Useful/Useful1.jpg');}
+.useful-2 {background-image: url('../img/Useful/Useful2.jpg');}
+.useful-3 {background-image: url('../img/Useful/Useful3.jpg');}
+.useful-4 {background-image: url('../img/Useful/Useful4.jpg');}
+
+.useful-card__about {
+	color: #FFF;
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-align: center;
+}
