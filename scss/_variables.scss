@@ -41,6 +41,11 @@
 	background-color: #ffa019;
 }
 
+.link-style_none {
+	text-decoration: none;
+	color: #000;
+}
+
 .before_minus::before {content: "-";}
 .before_plus::before {content: "+";}
 
@@ -63,6 +68,7 @@
 .p-block_6 {padding-block: 6rem;}
 
 // * margin-top
+.m-t_30 {margin-top: 30rem;}
 .m-t_8 {margin-top: 8rem;}
 .m-t_6 {margin-top: 6rem;}
 .m-t_5 {margin-top: 5rem;}

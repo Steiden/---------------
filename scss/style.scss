@@ -422,3 +422,42 @@ body {
 	font-weight: 700;
 	text-align: center;
 }
+
+// * __________footer
+.footer {
+	display: flex;
+	justify-content: space-between;
+	background-color: #FBFBFB;
+	padding-block: 5rem 7rem;
+	color: #8191A6;
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+.footer__about {
+	width: 38rem;
+}
+.footer-nav {
+	display: flex;
+}
+.footer__nav {
+}
+.footer-nav-content {
+	margin-inline: 2.5rem;
+}
+.nav__item {
+}
+.footer-nav__title {
+	color: #303842;
+	font-size: 1.4rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 1.2rem;
+}
+.nav-list {
+	list-style: none;
+}
+.nav-list__item {
+}
+.footer-link {
+	color: #8191A6;
+}
