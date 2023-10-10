@@ -147,6 +147,10 @@
   margin-bottom: 9rem;
 }
 
+.m-b_7 {
+  margin-bottom: 7rem;
+}
+
 .m-b_6 {
   margin-bottom: 5rem;
 }
@@ -478,4 +482,81 @@ body {
 .catalog_text-style {
   font-size: 1.6rem;
   font-weight: 300;
+}
+
+.list-team {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.teammate-card {
+  display: flex;
+  background-color: #FBFBFB;
+}
+
+.teammate-img {
+  width: 16rem;
+  height: 15rem;
+  background-size: cover;
+}
+
+.teammate-1 {
+  background-image: url("../img/Team/Иван Алексеев менеджер по продажам.jpg");
+}
+
+.teammate-2 {
+  background-image: url("../img/Team/Галина Петрова менеджер по продажам.jpg");
+}
+
+.teammate-3 {
+  background-image: url("../img/Team/Светлана Астахова менеджер по продажам.jpg");
+}
+
+.teammate-card__about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.5rem 3rem;
+}
+
+.teammate-card__name {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.teammate-card__position {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.teammate-card__btn {
+  width: 8rem;
+  height: 3rem;
+  color: #FFF;
+  text-transform: capitalize;
+}
+
+.brands {
+  display: flex;
+  align-items: center;
+  padding-block: 4rem;
+  background: #FBFBFB;
+}
+
+.brands-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.brands-list__item {
+  color: #9B9B9B;
+  font-size: 4rem;
+  font-weight: 700;
 }
