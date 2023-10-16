@@ -1,188 +1,8 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-@media (max-width: 2560px) {
-  html {
-    font-size: 17px !important;
-  }
-}
-@media (max-width: 1920px) {
-  html {
-    font-size: 12px !important;
-  }
-}
-@media (max-width: 1440px) {
-  html {
-    font-size: 10px !important;
-  }
-}
-@media (max-width: 1024px) {
-  html {
-    font-size: 8.5px !important;
-  }
-}
-@media (max-width: 768px) {
-  html {
-    font-size: 6.5px !important;
-  }
-}
-html {
-  scroll-behavior: smooth;
-  font-size: 10px;
-}
-
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.header {
-  background: center/cover no-repeat rgba(0, 0, 0, 0.4) url("../img/mainBackground.jpg");
-  background-blend-mode: darken;
-}
-.header .header__top-side {
-  background-color: #fff;
-}
-.header .contact {
-  height: 6.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
-}
-.header .contact__telephone {
-  font-size: 1.6rem;
-  font-weight: 400;
-}
-.header .nav-container {
-  height: 6.2em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header .logo {
-  font-size: 3rem;
-  font-weight: 700;
-}
-.header .logo_text-decor_none {
-  color: #000;
-  text-decoration: none;
-}
-.header .list {
-  font-size: 1.4rem;
-  list-style: none;
-}
-.header .list__item {
-  display: inline;
-}
-.header .list__item:not(:last-child), .header .list__item:not(:first-child) {
-  margin-inline: 15px;
-}
-.header .list__items_t-decor_none {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000;
-}
-.header .header__bottom-side {
-  height: 82rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.header .header__title {
-  color: #fff;
-  font-size: 5.6rem;
-  font-weight: 300;
-}
-.header .header__text {
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 300;
-  width: 65rem;
-  text-align: center;
-}
-.header .header__katalog-btn {
-  width: 16.5rem;
-  height: 6rem;
-  border-radius: 10px;
-  background: #fff;
-}
-
-.main .advantages__top-side {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.main .advantages__arrow-btn {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-.main .title {
-  font-size: 3.4rem;
-  font-weight: 300;
-}
-.main .advantages-list {
-  text-align: center;
-}
-.main .advantages__advantages-list {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-}
-.main .advantages-list__item {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-}
-.main .advantages-list__img {
-  width: 12rem;
-}
-.main .advantages-list__text {
-  font-size: 2rem;
-  font-weight: 300;
-}
-.main .about__text {
-  font-size: 2rem;
-  font-weight: 300;
-}
-.main .subscribe {
-  height: 9.4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.main .subscribe__about {
-  font-size: 1.8rem;
-  font-weight: 600;
-  width: 30rem;
-}
-.main .subscribe__form {
-  width: 80rem;
-  display: flex;
-  justify-content: flex-end;
-}
-.main .subscribe__input {
-  background-color: transparent;
-  border-color: #fff;
-  color: #fff;
-}
-.main .subscribe__input::-moz-placeholder {
-  color: #fff;
-}
-.main .subscribe__input::placeholder {
-  color: #fff;
-}
-.main .subscribe__button {
-  background-color: #fff;
-  width: 19.4rem;
-  height: 4.5rem;
-  font-size: 1.8rem;
-  font-weight: 600;
-  border-radius: 0;
 }
 
 .input {
@@ -226,12 +46,101 @@ body {
   background-color: #ffa019;
 }
 
+.link-style_none {
+  text-decoration: none;
+  color: #000;
+}
+
+.before_minus::before {
+  content: "-";
+}
+
+.before_plus::before {
+  content: "+";
+}
+
+.d_flex {
+  display: flex;
+}
+
+.d_grid {
+  display: grid;
+}
+
 .p-inline_10 {
   padding-inline: 10rem;
 }
 
+.p-inline_9 {
+  padding-inline: 9rem;
+}
+
+.p-inline_8 {
+  padding-inline: 8rem;
+}
+
+.p-inline_7 {
+  padding-inline: 7rem;
+}
+
+.p-inline_6 {
+  padding-inline: 6rem;
+}
+
+.p-inline_5 {
+  padding-inline: 5rem;
+}
+
+.p-inline_4 {
+  padding-inline: 4rem;
+}
+
+.p-inline_3 {
+  padding-inline: 3rem;
+}
+
+.p-inline_2 {
+  padding-inline: 2rem;
+}
+
+.p-block_6 {
+  padding-block: 6rem;
+}
+
+.m-t_30 {
+  margin-top: 30rem;
+}
+
 .m-t_8 {
   margin-top: 8rem;
+}
+
+.m-t_6 {
+  margin-top: 6rem;
+}
+
+.m-t_5 {
+  margin-top: 5rem;
+}
+
+.m-t_3 {
+  margin-top: 3rem;
+}
+
+.m-t_2 {
+  margin-top: 2rem;
+}
+
+.m-b_9 {
+  margin-bottom: 9rem;
+}
+
+.m-b_7 {
+  margin-bottom: 7rem;
+}
+
+.m-b_6 {
+  margin-bottom: 5rem;
 }
 
 .m-b_5 {
@@ -242,10 +151,583 @@ body {
   margin-bottom: 3rem;
 }
 
-.m-block_8 {
-  margin-block: 8rem;
+.m-b_2 {
+  margin-bottom: 2rem;
+}
+
+.m-l_10 {
+  margin-left: 10rem;
+}
+
+.m-l_4 {
+  margin-left: 4rem;
 }
 
 .m-l_3 {
   margin-left: 3rem;
+}
+
+.m-r_10 {
+  margin-right: 10rem;
+}
+
+.m-r_4 {
+  margin-right: 4rem;
+}
+
+.m-r_3 {
+  margin-right: 3rem;
+}
+
+.m-block_8 {
+  margin-block: 8rem;
+}
+
+.selected {
+  border-radius: 11px;
+  background: #FFA019 !important;
+  color: #FFF;
+  padding: 0.5rem 1.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  background: center/cover no-repeat rgba(0, 0, 0, 0.4) url("../img/mainBackground.jpg");
+  background-blend-mode: darken;
+}
+
+.header__top-side {
+  background-color: #fff;
+}
+
+.contact {
+  height: 6.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contact__telephone {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.nav-container {
+  height: 6.2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.logo_text-decor_none {
+  color: #000;
+  text-decoration: none;
+}
+
+.list {
+  font-size: 1.4rem;
+  list-style: none;
+}
+
+.list__item {
+  display: inline;
+}
+.list__item:not(:last-child), .list__item:not(:first-child) {
+  margin-inline: 1.5rem;
+}
+
+.list__items_t-decor_none {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+
+.header__bottom-side {
+  height: 82rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__title {
+  color: #fff;
+  font-size: 5.6rem;
+  font-weight: 300;
+}
+
+.header__text {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+  width: 65rem;
+  text-align: center;
+}
+
+.header__katalog-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16.5rem;
+  height: 6rem;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.advantages__top-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advantages__arrow-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.advantages__arrow {
+  width: 3rem;
+}
+
+.title {
+  font-size: 3.4rem;
+  font-weight: 300;
+}
+
+.advantages-list {
+  text-align: center;
+}
+
+.advantages__advantages-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.advantages-list__item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages-list__img {
+  width: 12rem;
+}
+
+.advantages-list__text {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.about__text {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.subscribe__container {
+  padding-block: 2em;
+  display: grid;
+  grid-template: auto/repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe__about {
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.subscribe__form {
+  display: grid;
+  grid-template: 1fr/repeat(3, 1fr);
+}
+
+.subscribe__input {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+.subscribe__input::-moz-placeholder {
+  color: #fff;
+}
+.subscribe__input::placeholder {
+  color: #fff;
+}
+
+.subscribe__button {
+  background-color: #fff;
+  width: 13em;
+  height: auto;
+  font-size: 1.8em;
+  font-weight: 600;
+  border-radius: 0;
+}
+
+.list-features {
+  list-style: none;
+}
+
+.list-features__item::before {
+  padding-right: 0.5rem;
+}
+
+.features_text-style {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem;
+}
+
+.catalog-container {
+  background-color: #FBFBFB;
+}
+
+.catalog__top-side {
+  justify-content: space-between;
+}
+
+.filter {
+  align-items: center;
+}
+
+.filter-list {
+  list-style: none;
+}
+
+.filter-list__item {
+  font-size: 1.2em;
+  margin-inline: 2em;
+}
+
+.filter__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.card-list {
+  list-style: none;
+  justify-content: space-between;
+  grid-template: auto/repeat(4, 1fr);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: #FFF;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  width: 24em;
+  height: 33.6em;
+  padding: 1em;
+  position: relative;
+  margin-bottom: 3em;
+}
+
+.card__type {
+  font-size: 1.3em;
+  border-radius: 0px 15px 15px 0px;
+  background: #FFA019;
+  color: #FFF;
+  position: absolute;
+  min-width: 6em;
+  padding: 0.5em;
+  padding-right: 1em;
+  left: 0;
+  top: 1.5em;
+}
+
+.img-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card__img {
+  width: 20em;
+}
+
+.card__title {
+  font-size: 1.6em;
+  font-weight: 300;
+  margin-bottom: 1.5em;
+  width: 70%;
+}
+
+.card__price {
+  font-size: 2em;
+  font-weight: 700;
+}
+.card__price::after {
+  content: "р.";
+  margin-left: 0.5em;
+}
+
+.catalog_text-style {
+  font-size: 1.6em;
+  font-weight: 300;
+}
+
+.list-team {
+  list-style: none;
+  display: grid;
+  grid-template: auto/repeat(3, 1fr);
+  place-items: space-between;
+}
+
+.teammate-card {
+  display: flex;
+  background-color: #FBFBFB;
+}
+
+.teammate-img {
+  width: 14em;
+  height: 13em;
+  background-size: cover;
+}
+
+.teammate-1 {
+  background-image: url("../img/Team/Иван Алексеев менеджер по продажам.jpg");
+}
+
+.teammate-2 {
+  background-image: url("../img/Team/Галина Петрова менеджер по продажам.jpg");
+}
+
+.teammate-3 {
+  background-image: url("../img/Team/Светлана Астахова менеджер по продажам.jpg");
+}
+
+.teammate-card__about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.5em 3em;
+}
+
+.teammate-card__name {
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.teammate-card__position {
+  font-size: 1.3em;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.teammate-card__btn {
+  font-size: 1.6em;
+  width: 5em;
+  height: 2em;
+  color: #FFF;
+  text-transform: capitalize;
+}
+
+.brands {
+  display: flex;
+  align-items: center;
+  padding-block: 4rem;
+  background: #FBFBFB;
+}
+
+.brands-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.brands-list__item {
+  color: #9B9B9B;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.useful-list {
+  display: grid;
+  grid-template: auto/repeat(4, 1fr);
+  place-items: space-between;
+  list-style: none;
+}
+
+.useful-list__item {
+  margin-bottom: 3em;
+}
+
+.useful-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: darken;
+  width: 25em;
+  height: 25em;
+}
+
+.useful-1 {
+  background-image: url("../img/Useful/1.jpg");
+}
+
+.useful-2 {
+  background-image: url("../img/Useful/2.jpg");
+}
+
+.useful-3 {
+  background-image: url("../img/Useful/3.jpg");
+}
+
+.useful-4 {
+  background-image: url("../img/Useful/4.jpg");
+}
+
+.useful-card__about {
+  color: #FFF;
+  font-size: 1.6em;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 2560px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1920px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1440px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (max-width: 1280px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 7px;
+  }
+}
+@media (max-width: 896px) {
+  html {
+    font-size: 6px;
+  }
+}
+@media (max-width: 768px) {
+  .card-list {
+    font-size: 1.2em;
+    grid-template: auto/repeat(3, 1fr);
+  }
+  .list-team {
+    font-size: 1.5em;
+    grid-template: auto/repeat(1, 1fr);
+  }
+  .list-team__item:not(:last-child) {
+    margin-bottom: 2em;
+  }
+  .useful-list {
+    font-size: 1.4em;
+    grid-template: auto/repeat(2, 1fr);
+    place-items: center;
+  }
+}
+@media (max-width: 682px) {
+  html {
+    font-size: 5.5px;
+  }
+}
+@media (max-width: 596px) {
+  html {
+    font-size: 5px;
+  }
+  .subscribe__container {
+    font-size: 1.5em;
+    grid-template: 4fr 8fr/1fr;
+    justify-items: start;
+  }
+  .subscribe__form {
+    width: 100%;
+    grid-template: repeat(2, 1fr)/auto;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .subscribe__input {
+    margin: 0;
+    margin-bottom: 2em;
+    width: 30em;
+    height: 5em;
+  }
+  .subscribe__input::-moz-placeholder {
+    font-size: 1.4em;
+  }
+  .subscribe__input::placeholder {
+    font-size: 1.4em;
+  }
+  .subscribe__button {
+    grid-column: span 2;
+    margin: 0;
+    height: 2.2em;
+    margin-top: 1em;
+    justify-self: center;
+  }
+  .card-list {
+    font-size: 1.4em;
+    grid-template: auto/repeat(2, 1fr);
+    place-items: center;
+  }
+}
+@media (max-width: 530px) {
+  html {
+    font-size: 4.5px;
+  }
+  .filter-list__item {
+    margin-inline: 1em;
+  }
+}
+@media (max-width: 478px) {
+  html {
+    font-size: 4px;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 3.5px;
+  }
+  .brands {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 3px;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 2.5px;
+  }
 }
