@@ -343,22 +343,23 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	padding: 1.5rem 3rem;
+	padding: 1.5em 3em;
 }
 .teammate-card__name {
-	font-size: 1.8rem;
+	font-size: 1.8em;
 	font-weight: 400;
-	margin-bottom: 1rem;
+	margin-bottom: 1em;
 }
 .teammate-card__position {
-	font-size: 1rem;
+	font-size: 1em;
 	font-style: italic;
 	font-weight: 400;
 	margin-bottom: 2rem;
 }
 .teammate-card__btn {
-	width: 8rem;
-	height: 3rem;
+	width: 6em;
+	height: 2.5em;
+	padding: .5em;
 	color: #FFF;
 	text-transform: capitalize;
 }
