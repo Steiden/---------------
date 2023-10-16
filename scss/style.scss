@@ -108,6 +108,10 @@ body {
 	cursor: pointer;
 }
 
+.advantages__arrow {
+	width: 3rem;
+}
+
 .title {
 	font-size: 3.4rem;
 	font-weight: 300;
@@ -160,8 +164,9 @@ body {
 }
 
 .subscribe__container {
-	height: 9.4rem;
-	display: flex;
+	padding-block: 2em;
+	display: grid;
+	grid-template: auto / repeat(2, 1fr);
 	justify-content: space-between;
 	align-items: center;
 }
@@ -241,8 +246,8 @@ body {
 	list-style: none;
 }
 .filter-list__item {
-	font-size: 1.1em;
-	padding-inline: 2em;
+	font-size: 1.2em;
+	margin-inline: 2em;
 }
 .filter__button {
 	border: none;
@@ -272,6 +277,7 @@ body {
 	margin-bottom: 3em;
 }
 .card__type {
+	font-size: 1.3em;
 	border-radius: 0px 15px 15px 0px;
 	background: #FFA019;
 	color: #FFF;
@@ -315,8 +321,9 @@ body {
 }
 .list-team {
 	list-style: none;
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template: auto / repeat(3, 1fr);
+	place-items: space-between;
 }
 .team__list {
 }
@@ -329,8 +336,8 @@ body {
 	background-color: #FBFBFB;
 }
 .teammate-img {
-	width: 16rem;
-	height: 15rem;
+	width: 14em;
+	height: 13em;
 	background-size: cover;
 }
 
@@ -346,20 +353,20 @@ body {
 	padding: 1.5em 3em;
 }
 .teammate-card__name {
-	font-size: 1.8em;
+	font-size: 2em;
 	font-weight: 400;
 	margin-bottom: 1em;
 }
 .teammate-card__position {
-	font-size: 1em;
+	font-size: 1.3em;
 	font-style: italic;
 	font-weight: 400;
 	margin-bottom: 2rem;
 }
 .teammate-card__btn {
-	width: 6em;
-	height: 2.5em;
-	padding: .5em;
+	font-size: 1.6em;
+	width: 5em;
+	height: 2em;
 	color: #FFF;
 	text-transform: capitalize;
 }
@@ -392,7 +399,7 @@ body {
 .useful-list {
 	display: grid;
 	grid-template: auto / repeat(4, 1fr);
-	justify-content: space-between;
+	place-items: space-between;
 	list-style: none;
 }
 .useful__list {

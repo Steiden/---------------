@@ -187,8 +187,7 @@
   border-radius: 11px;
   background: #FFA019 !important;
   color: #FFF;
-  width: 5rem;
-  height: 2rem;
+  padding: 0.5rem 1.5rem;
 }
 
 html {
@@ -301,6 +300,10 @@ body {
   cursor: pointer;
 }
 
+.advantages__arrow {
+  width: 3rem;
+}
+
 .title {
   font-size: 3.4rem;
   font-weight: 300;
@@ -337,8 +340,9 @@ body {
 }
 
 .subscribe__container {
-  height: 9.4rem;
-  display: flex;
+  padding-block: 2em;
+  display: grid;
+  grid-template: auto/repeat(2, 1fr);
   justify-content: space-between;
   align-items: center;
 }
@@ -405,8 +409,8 @@ body {
 }
 
 .filter-list__item {
-  font-size: 1.1em;
-  padding-inline: 2em;
+  font-size: 1.2em;
+  margin-inline: 2em;
 }
 
 .filter__button {
@@ -436,6 +440,7 @@ body {
 }
 
 .card__type {
+  font-size: 1.3em;
   border-radius: 0px 15px 15px 0px;
   background: #FFA019;
   color: #FFF;
@@ -479,8 +484,9 @@ body {
 
 .list-team {
   list-style: none;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template: auto/repeat(3, 1fr);
+  place-items: space-between;
 }
 
 .teammate-card {
@@ -489,8 +495,8 @@ body {
 }
 
 .teammate-img {
-  width: 16rem;
-  height: 15rem;
+  width: 14em;
+  height: 13em;
   background-size: cover;
 }
 
@@ -515,22 +521,22 @@ body {
 }
 
 .teammate-card__name {
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: 400;
   margin-bottom: 1em;
 }
 
 .teammate-card__position {
-  font-size: 1em;
+  font-size: 1.3em;
   font-style: italic;
   font-weight: 400;
   margin-bottom: 2rem;
 }
 
 .teammate-card__btn {
-  width: 6em;
-  height: 2.5em;
-  padding: 0.5em;
+  font-size: 1.6em;
+  width: 5em;
+  height: 2em;
   color: #FFF;
   text-transform: capitalize;
 }
@@ -559,7 +565,7 @@ body {
 .useful-list {
   display: grid;
   grid-template: auto/repeat(4, 1fr);
-  justify-content: space-between;
+  place-items: space-between;
   list-style: none;
 }
 
@@ -641,26 +647,125 @@ body {
 
 @media (max-width: 2560px) {
   html {
-    font-size: 17px !important;
+    font-size: 17px;
   }
 }
 @media (max-width: 1920px) {
   html {
-    font-size: 12px !important;
+    font-size: 12px;
   }
 }
 @media (max-width: 1440px) {
   html {
-    font-size: 10px !important;
+    font-size: 10px;
+  }
+}
+@media (max-width: 1280px) {
+  html {
+    font-size: 8px;
   }
 }
 @media (max-width: 1024px) {
   html {
-    font-size: 8.5px !important;
+    font-size: 7px;
+  }
+}
+@media (max-width: 896px) {
+  html {
+    font-size: 6px;
   }
 }
 @media (max-width: 768px) {
+  .card-list {
+    font-size: 1.2em;
+    grid-template: auto/repeat(3, 1fr);
+  }
+  .list-team {
+    font-size: 1.5em;
+    grid-template: auto/repeat(1, 1fr);
+  }
+  .list-team__item:not(:last-child) {
+    margin-bottom: 2em;
+  }
+  .useful-list {
+    font-size: 1.4em;
+    grid-template: auto/repeat(2, 1fr);
+    place-items: center;
+  }
+}
+@media (max-width: 682px) {
   html {
-    font-size: 6.5px !important;
+    font-size: 5.5px;
+  }
+}
+@media (max-width: 596px) {
+  html {
+    font-size: 5px;
+  }
+  .subscribe__container {
+    font-size: 1.5em;
+    grid-template: 4fr 8fr/1fr;
+    justify-items: start;
+  }
+  .subscribe__form {
+    width: 100%;
+    grid-template: repeat(2, 1fr)/auto;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .subscribe__input {
+    margin: 0;
+    margin-bottom: 2em;
+    width: 30em;
+    height: 5em;
+  }
+  .subscribe__input::-moz-placeholder {
+    font-size: 1.4em;
+  }
+  .subscribe__input::placeholder {
+    font-size: 1.4em;
+  }
+  .subscribe__button {
+    grid-column: span 2;
+    margin: 0;
+    height: 2.2em;
+    margin-top: 1em;
+    justify-self: center;
+  }
+  .card-list {
+    font-size: 1.4em;
+    grid-template: auto/repeat(2, 1fr);
+    place-items: center;
+  }
+}
+@media (max-width: 530px) {
+  html {
+    font-size: 4.5px;
+  }
+  .filter-list__item {
+    margin-inline: 1em;
+  }
+}
+@media (max-width: 478px) {
+  html {
+    font-size: 4px;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 3.5px;
+  }
+  .brands {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 3px;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 2.5px;
   }
 }
