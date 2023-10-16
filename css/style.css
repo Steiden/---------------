@@ -607,6 +607,44 @@ body {
   text-align: center;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FBFBFB;
+  padding-block: 5rem 7rem;
+  color: #8191A6;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.footer__about {
+  width: 38rem;
+}
+
+.footer-nav {
+  display: flex;
+}
+
+.footer-nav-content {
+  margin-inline: 2.5rem;
+}
+
+.footer-nav__title {
+  color: #303842;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.footer-link {
+  color: #8191A6;
+}
+
 @media (max-width: 2560px) {
   html {
     font-size: 17px;
