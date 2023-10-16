@@ -122,13 +122,18 @@
 
 		<!-- Секция "Подписаться" -->
 		<section class="subscribe p-inline_10 m-t_8 themes_orange">
-			<span class="subscribe__about">Подпишитесь на нашу рассылку и оставайтесь в курсе событий</span>
-			<form class="subscribe__form">
-				<input type="text" class="input subscribe__input m-l_3" id="Name" placeholder="Имя">
-				<input type="email" class="input subscribe__input m-l_3" id="Email" placeholder="Email">
-				<button type="submit"
-					class="button subscribe__button m-l_3 button_text-style_black">Подписаться</button>
-			</form>
+				<div class="subscribe__container">
+					<div class="subscribe__about">
+						<span>Подпишитесь на нашу рассылку и оставайтесь в
+							курсе событий</span>
+					</div>
+					<form class="subscribe__form">
+						<input type="text" class="input subscribe__input m-l_3" id="Name" placeholder="Имя">
+						<input type="email" class="input subscribe__input m-l_3" id="Email" placeholder="Email">
+						<button type="submit"
+							class="button subscribe__button m-l_3 button_text-style_black">Подписаться</button>
+					</form>
+				</div>
 		</section>
 
 		<!-- Секция "Особенности гироскутеров" -->
@@ -186,7 +191,7 @@
 						</ul>
 					</nav>
 				</div>
-				<ul class="card-list catalog__cards d_flex">
+				<ul class="card-list catalog__cards d_grid">
 					<li class="card-container card-list__item">
 						<div class="card">
 							<div class="card__type">Сигвеи</div>
@@ -321,8 +326,10 @@
 				<h2 class="footer-nav__title">Компания My-Giro</h2>
 				<ul class="nav-list">
 					<li class="nav-list__item"><a href="#About" class="footer-link link-style_none">О нас</a></li>
-					<li class="nav-list__item"><a href="#Adventages" class="footer-link link-style_none">Наши преимущества</a></li>
-					<li class="nav-list__item"><a href="#Team" class="footer-link link-style_none">Наши консультанты</a></li>
+					<li class="nav-list__item"><a href="#Adventages" class="footer-link link-style_none">Наши
+							преимущества</a></li>
+					<li class="nav-list__item"><a href="#Team" class="footer-link link-style_none">Наши консультанты</a>
+					</li>
 				</ul>
 			</div>
 			<div class="footer-nav-content nav__item">
@@ -330,19 +337,24 @@
 				<ul class="nav-list">
 					<li class="nav-list__item"><a href="#Catalog" class="footer-link link-style_none">Каталог</a></li>
 					<li class="nav-list__item"><a href="#Brands" class="footer-link link-style_none">Пренды</a></li>
-					<li class="nav-list__item"><a href="#Useful" class="footer-link link-style_none">Полезная информация</a></li>
+					<li class="nav-list__item"><a href="#Useful" class="footer-link link-style_none">Полезная
+							информация</a></li>
 				</ul>
 			</div>
 			<div class="footer-nav-content nav__item">
 				<h2 class="footer-nav__title">Помощь</h2>
 				<ul class="nav-list">
-					<li class="nav-list__item"><a href="#" class="footer-link link-style_none">Как оформить заказ</a></li>
+					<li class="nav-list__item"><a href="#" class="footer-link link-style_none">Как оформить заказ</a>
+					</li>
 					<li class="nav-list__item"><a href="#" class="footer-link link-style_none">Способ оплаты</a></li>
-					<li class="nav-list__item"><a href="#" class="footer-link link-style_none">Обмен и возврат товара</a></li>
+					<li class="nav-list__item"><a href="#" class="footer-link link-style_none">Обмен и возврат
+							товара</a></li>
 				</ul>
 			</div>
 		</nav>
 	</footer>
+
+	<script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -5,31 +5,6 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 2560px) {
-  html {
-    font-size: 17px !important;
-  }
-}
-@media (max-width: 1920px) {
-  html {
-    font-size: 12px !important;
-  }
-}
-@media (max-width: 1440px) {
-  html {
-    font-size: 10px !important;
-  }
-}
-@media (max-width: 1024px) {
-  html {
-    font-size: 8.5px !important;
-  }
-}
-@media (max-width: 768px) {
-  html {
-    font-size: 6.5px !important;
-  }
-}
 .input {
   width: 20rem;
   height: 4.5rem;
@@ -86,6 +61,10 @@
 
 .d_flex {
   display: flex;
+}
+
+.d_grid {
+  display: grid;
 }
 
 .p-inline_10 {
@@ -269,7 +248,7 @@ body {
   display: inline;
 }
 .list__item:not(:last-child), .list__item:not(:first-child) {
-  margin-inline: 15px;
+  margin-inline: 1.5rem;
 }
 
 .list__items_t-decor_none {
@@ -357,7 +336,7 @@ body {
   font-weight: 300;
 }
 
-.subscribe {
+.subscribe__container {
   height: 9.4rem;
   display: flex;
   justify-content: space-between;
@@ -365,15 +344,13 @@ body {
 }
 
 .subscribe__about {
-  font-size: 1.8rem;
+  font-size: 1.8em;
   font-weight: 600;
-  width: 30rem;
 }
 
 .subscribe__form {
-  width: 80rem;
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template: 1fr/repeat(3, 1fr);
 }
 
 .subscribe__input {
@@ -390,9 +367,9 @@ body {
 
 .subscribe__button {
   background-color: #fff;
-  width: 19.4rem;
-  height: 4.5rem;
-  font-size: 1.8rem;
+  width: 13em;
+  height: auto;
+  font-size: 1.8em;
   font-weight: 600;
   border-radius: 0;
 }
@@ -428,18 +405,21 @@ body {
 }
 
 .filter-list__item {
-  padding-inline: 2rem;
+  font-size: 1.1em;
+  padding-inline: 2em;
 }
 
 .filter__button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  font-size: 1em;
 }
 
 .card-list {
   list-style: none;
   justify-content: space-between;
+  grid-template: auto/repeat(4, 1fr);
 }
 
 .card {
@@ -448,10 +428,11 @@ body {
   justify-content: flex-end;
   background: #FFF;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-  width: 24rem;
-  height: 33.6rem;
-  padding: 1rem;
+  width: 24em;
+  height: 33.6em;
+  padding: 1em;
   position: relative;
+  margin-bottom: 3em;
 }
 
 .card__type {
@@ -459,11 +440,11 @@ body {
   background: #FFA019;
   color: #FFF;
   position: absolute;
-  min-width: 6rem;
-  padding: 0.5rem;
-  padding-right: 1rem;
+  min-width: 6em;
+  padding: 0.5em;
+  padding-right: 1em;
   left: 0;
-  top: 1.5rem;
+  top: 1.5em;
 }
 
 .img-container {
@@ -472,27 +453,27 @@ body {
 }
 
 .card__img {
-  width: 20rem;
+  width: 20em;
 }
 
 .card__title {
-  font-size: 1.6rem;
+  font-size: 1.6em;
   font-weight: 300;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5em;
   width: 70%;
 }
 
 .card__price {
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: 700;
 }
 .card__price::after {
   content: "р.";
-  margin-left: 0.5rem;
+  margin-left: 0.5em;
 }
 
 .catalog_text-style {
-  font-size: 1.6rem;
+  font-size: 1.6em;
   font-weight: 300;
 }
 
@@ -569,14 +550,20 @@ body {
 
 .brands-list__item {
   color: #9B9B9B;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .useful-list {
-  display: flex;
+  display: grid;
+  grid-template: auto/repeat(4, 1fr);
   justify-content: space-between;
   list-style: none;
+}
+
+.useful-list__item {
+  margin-bottom: 3em;
 }
 
 .useful-card {
@@ -586,8 +573,8 @@ body {
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: darken;
-  width: 25rem;
-  height: 25rem;
+  width: 25em;
+  height: 25em;
 }
 
 .useful-1 {
@@ -608,7 +595,7 @@ body {
 
 .useful-card__about {
   color: #FFF;
-  font-size: 1.6rem;
+  font-size: 1.6em;
   font-weight: 700;
   text-align: center;
 }
@@ -649,4 +636,30 @@ body {
 
 .footer-link {
   color: #8191A6;
+}
+
+@media (max-width: 2560px) {
+  html {
+    font-size: 17px !important;
+  }
+}
+@media (max-width: 1920px) {
+  html {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 1440px) {
+  html {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 8.5px !important;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 6.5px !important;
+  }
 }
