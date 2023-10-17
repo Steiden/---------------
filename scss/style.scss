@@ -299,7 +299,7 @@ body {
 	font-size: 1.6em;
 	font-weight: 300;
 	margin-bottom: 1.5em;
-	width: 70%;
+	// width: 70%;
 }
 .card__price {
 	font-size: 2em;
@@ -307,7 +307,7 @@ body {
 
 	&::after {
 		content: "р.";
-		margin-left: .5em;
+		margin-left: .1em;
 	}
 }
 

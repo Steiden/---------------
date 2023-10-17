@@ -187,7 +187,7 @@
   border-radius: 11px;
   background: #FFA019 !important;
   color: #FFF;
-  padding: 0.5rem 1.5rem;
+  padding: 0.3rem 1rem;
 }
 
 html {
@@ -465,7 +465,6 @@ body {
   font-size: 1.6em;
   font-weight: 300;
   margin-bottom: 1.5em;
-  width: 70%;
 }
 
 .card__price {
@@ -474,7 +473,7 @@ body {
 }
 .card__price::after {
   content: "р.";
-  margin-left: 0.5em;
+  margin-left: 0.1em;
 }
 
 .catalog_text-style {
