@@ -1,6 +1,7 @@
 import { form, regSubscription } from "./modules/subscribe.mjs";
 // import { validInputFields } from "./modules/validationInput.mjs";
 
+// TODO Сделать валидацию формы
 // // Валидация формы
 // const inputFields = document.querySelectorAll('input');
 
@@ -65,6 +66,12 @@ window.addEventListener("load", () => {
 	// Загрузка все товары
 	loadCatalog("All");
 });
+window.addEventListener("click", (e) => {
+	// Закрытие бургер-меню
+	// const burgerList = document.querySelector(".burger-list");
+	// if(e.target !== burgerList && burgerList.classList.contains("show"))
+	// 	document.querySelector(".burger-list").classList.remove("show");
+});
 
 // Подгрузка нужных карточек товара в каталог
 function loadCatalog(catalogName) {
@@ -112,4 +119,14 @@ function loadCards(catalog, catalogName, catalogNameTrans) {
 // Форматирование цены под единый стиль. Пример: "12 345"
 function formatAsPrice(string) {
 	return string.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+}
+
+// Открытие бургер-меню
+document.querySelector(".burger").addEventListener("click", openBurgerMenu);
+function openBurgerMenu(e) {
+	if(e.target.classList.contains("burger")) {
+		document.querySelector(".burger-list").classList.add("show");
+	} else {
+		document.querySelector(".burger-list").classList.remove("show");
+	}
 }

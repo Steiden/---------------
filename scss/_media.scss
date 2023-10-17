@@ -24,11 +24,17 @@
 
 @media (max-width: 1024px) {
 	html {
-		font-size: 7px;
+		font-size: 8px;
 	}
 }
 
 @media (max-width: 896px) {
+	html {
+		font-size: 7px;
+	}
+}
+
+@media (max-width: 832px) {
 	html {
 		font-size: 6px;
 	}
@@ -63,7 +69,18 @@
 
 @media (max-width: 596px) {
 	html {
-		font-size: 5px;
+		font-size: 7px;
+	}
+	
+	.contact__telephone {
+		font-size: 1.3em;
+	}
+
+	.nav-list {
+		display: none;
+	}
+	.burger {
+		display: block;
 	}
 
 	.subscribe__container {
@@ -79,9 +96,9 @@
 	}
 	.subscribe__input {
 		margin: 0;
-		margin-bottom: 2em;
-		width: 30em;
-		height: 5em;
+		margin-block: 2em;
+		width: 30rem;
+		height: 5rem;
 
 		&::placeholder {font-size: 1.4em;}
 	}
@@ -93,47 +110,86 @@
 		justify-self: center;
 	}
 
+	.list-container {
+		font-size: 1.9rem;
+		display: flex;
+		justify-content: space-between;
+	}
+	.list-container-plus {
+		display: flex;
+		justify-content: center;
+	}
+	.list-container-minus,
+	.list-container-plus,
+	.list-features {
+		margin: 0;
+	}
+
+	.catalog {
+		font-size: .7em;
+	}
+	.filter-list {
+		font-size: 1.3em;
+	}
+	.filter-list__item {
+		margin-inline: .5em;
+	}
 	.card-list {
-		font-size: 1.4em;
+		font-size: 1.5em;
 		grid-template: auto / repeat(2, 1fr);
 		place-items: center;
+	}
+
+	.brands-list__item {
+		font-size: 2.5em;
+	}
+
+	.useful {
+		font-size: .8em;
+	}
+
+	.footer {
+		grid-template: repeat(2, 1fr) / 1fr;
+		place-items: center;
+	}
+	.footer__about {
+		margin-top: 2em;
+	}
+	.footer-nav {
+		order: -1;
 	}
 }
 
 @media (max-width: 530px) {
 	html {
-		font-size: 4.5px;
+		font-size: 6.5px;
 	}
 
-	.filter-list__item {
-		margin-inline: 1em;
+	.subscribe__input {
+		width: 17em;
 	}
 }
 
 @media (max-width: 478px) {
 	html {
-		font-size: 4px;
+		font-size: 6px;
 	}
 }
 
 @media (max-width: 425px) {
 	html {
-		font-size: 3.5px;
-	}
-
-	.brands {
-		font-size: 0.9em;
+		font-size: 5.5px;
 	}
 }
 
 @media (max-width: 375px) {
 	html {
-		font-size: 3px;
+		font-size: 4.5px;
 	}
 }
 
 @media (max-width: 320px) {
 	html {
-		font-size: 2.5px;
+		font-size: 4px;
 	}
 }
