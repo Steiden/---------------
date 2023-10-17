@@ -30,22 +30,22 @@
 				<nav class="header__nav">
 					<ul class="list">
 						<li class="list__item">
-							<a href="#About" class="list__items_t-decor_none">О нас</a>
+							<a href="#About" class="list-link list__items_t-decor_none">О нас</a>
 						</li>
 						<li class="list__item">
-							<a href="#Adventages" class="list__items_t-decor_none">Преимущества</a>
+							<a href="#Adventages" class="list-link list__items_t-decor_none">Преимущества</a>
 						</li>
 						<li class="list__item">
-							<a href="#Features" class="list__items_t-decor_none">Особенности</a>
+							<a href="#Features" class="list-link list__items_t-decor_none">Особенности</a>
 						</li>
 						<li class="list__item">
-							<a href="#Team" class="list__items_t-decor_none">Команда</a>
+							<a href="#Team" class="list-link list__items_t-decor_none">Команда</a>
 						</li>
 						<li class="list__item">
-							<a href="#Brands" class="list__items_t-decor_none">Бренды</a>
+							<a href="#Brands" class="list-link list__items_t-decor_none">Бренды</a>
 						</li>
 						<li class="list__item">
-							<a href="#Useful" class="list__items_t-decor_none">Полезное</a>
+							<a href="#Useful" class="list-link list__items_t-decor_none">Полезное</a>
 						</li>
 					</ul>
 				</nav>
@@ -127,7 +127,7 @@
 					<span>Подпишитесь на нашу рассылку и оставайтесь в
 						курсе событий</span>
 				</div>
-				<form class="subscribe__form">
+				<form class="subscribe__form" id="subscribe-form">
 					<input type="text" class="input subscribe__input m-l_3" id="Name" placeholder="Имя">
 					<input type="email" class="input subscribe__input m-l_3" id="Email" placeholder="Email">
 					<button type="submit"
@@ -192,42 +192,7 @@
 					</nav>
 				</div>
 				<ul class="card-list catalog__cards d_grid" id="Catalog">
-					<li class="card-container card-list__item">
-						<div class="card">
-							<div class="card__type">Сигвеи</div>
-							<div class="img-container"><img src="./img/Catalog/Sigways/Sigway2.jpg" alt="Sigway2"
-									class="card__img"></div>
-							<h6 class="card__title">Xiaomi Ninebot mini Pro White (Белый)</h6>
-							<span class="card__price">31 480</span>
-						</div>
-					</li>
-					<li class="card-container card-list__item">
-						<div class="card">
-							<div class="card__type">Гироскутеры</div>
-							<div class="img-container"><img src="./img/Catalog/Giroskooters/Giroskooter2.jpg"
-									alt="Giroskooter2" class="card__img"></div>
-							<h6 class="card__title">Xiaomi Ninebot mini Pro White (Белый)</h6>
-							<span class="card__price">31 480</span>
-						</div>
-					</li>
-					<li class="card-container card-list__item">
-						<div class="card">
-							<div class="card__type">Электросамокаты</div>
-							<div class="img-container"><img src="./img/Catalog/Electroskooters/Electroskooter3.jpg"
-									alt="Electroskooter3" class="card__img"></div>
-							<h6 class="card__title">Xiaomi Ninebot mini Pro White (Белый)</h6>
-							<span class="card__price">31 480</span>
-						</div>
-					</li>
-					<li class="card-container card-list__item">
-						<div class="card">
-							<div class="card__type">Сигвеи</div>
-							<div class="img-container"><img src="./img/Catalog/Sigways/Sigway1.jpg" alt="Sigway1"
-									class="card__img"></div>
-							<h6 class="card__title">Xiaomi Ninebot mini Pro White (Белый)</h6>
-							<span class="card__price">31 480</span>
-						</div>
-					</li>
+
 				</ul>
 			</div>
 		</section>
@@ -354,7 +319,12 @@
 		</nav>
 	</footer>
 
-	<script src="./js/script.js"></script>
+	<div class="modal-message subscribe__message" id="modal-message">
+		<button class="button close-btn modal-message__close">✕</button>
+		<div class="modal-message__content" id="modal-message-content"></div>
+	</div>
+
+	<script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

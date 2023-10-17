@@ -1,4 +1,18 @@
-// Для каталога
+import { form, regSubscription } from "./modules/subscribe.mjs";
+// import { validInputFields } from "./modules/validationInput.mjs";
+
+// // Валидация формы
+// const inputFields = document.querySelectorAll('input');
+
+// Оформление подписки
+form.addEventListener("submit", regSubscription);
+
+// Закрытие модального окна
+document.querySelector(".close-btn").addEventListener("click", () => {
+	document.getElementById("modal-message").classList.remove("show");
+});
+
+// Каталог
 const catalog = document.querySelector("#Catalog");
 
 // Информация о каталоге
@@ -32,6 +46,7 @@ const catalogInfo = {
 	}
 }
 
+// Массив кнопок фильтра
 const filterBtn = document.querySelectorAll(".filter__button");
 let filterBtnSelected = filterBtn[0];
 filterBtn.forEach((item) => {
@@ -45,9 +60,9 @@ filterBtn.forEach((item) => {
 	});
 });
 
-// При загрузке окна
+
 window.addEventListener("load", () => {
-	// Загружать все товары
+	// Загрузка все товары
 	loadCatalog("All");
 });
 
@@ -76,7 +91,7 @@ function loadCatalog(catalogName) {
 	}
 }
 
-// Подгрузка нужынх карточек товара
+// Подгрузка нужных карточек товара
 function loadCards(catalog, catalogName, catalogNameTrans) {
 	for(let i = 1; i <= 3; i++) {
 		let card = /*html*/ `
